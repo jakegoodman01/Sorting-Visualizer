@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#define MAX_LEN 1024
+#define MAX_LEN 2048
 #define PAIR 2
 
 /* 						Defines struct pair 		 			  */

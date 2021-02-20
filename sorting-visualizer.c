@@ -7,9 +7,9 @@
 #include <string.h>
 #include "sorts.c"
 
-#define N 35
-#define WINDOW_HEIGHT 30
-#define ARRAY_HEIGHT 20
+#define N 55
+#define WINDOW_HEIGHT 35
+#define ARRAY_HEIGHT 30
 #define DELAY 10
 
 void visualize_array(int *arr);
@@ -32,6 +32,8 @@ int main(int argc, char *argv[]) {
 	char *cmd = argv[1];
 	if (strcmp(cmd, "insertion") == 0)
 		animations = insertion_sort_animations(arr_cpy, N);
+	else if (strcmp(cmd, "bubble") == 0) 
+		animations = bubble_sort_animations(arr_cpy, N);
 	else {
 		printf("Invalid sort: %s\n", cmd);
 		exit(EXIT_SUCCESS);
